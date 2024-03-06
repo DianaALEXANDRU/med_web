@@ -1,0 +1,148 @@
+.banner{
+    background-image: url('../../../assets/images/img2.png');
+    height: 600px;
+    background-position: center top;
+    background-size: cover;
+}
+.content{
+    top: 30%;
+    left:15%;
+    position: absolute;
+}
+.content h1{
+    color: #1b9bff;
+    font-size: 50px;
+    font-weight: bold;
+    
+
+}
+
+.custom-color-button {
+    background-color:#1b9bff;; /* replace with your custom color code */
+    color: #ffffff; /* replace with your text color */
+    padding:15px 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+  }
+
+.welcome-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+
+}
+
+ .centerd-text{
+    text-align: center;
+    
+
+ }
+
+ h2{
+    color: #202020;
+    font-size: 35px;
+ }
+
+
+ .line{
+    background-color: #202020;
+    background: #202020;
+    width: 400px;
+    height: 5px;
+    margin: 0 auto;
+ }
+
+ .container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .object {
+    text-align: center;
+  }
+  
+  .object img {
+    width: 100px; /* Adjust the width of the icon as needed */
+    height: 100px; /* Adjust the height of the icon as needed */
+    margin-bottom: 10px; /* Adjust the margin as needed */
+  }
+
+  h3{
+    color: #1b9bff;
+    font-size: 25px;
+    font-weight:550;
+    
+
+}
+
+.about-card {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .about-card h2 {
+    position: relative;
+    color: #333;
+  }
+  
+  .about-card h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px; /* Adjust the width of the line */
+    height: 3px; /* Adjust the height and thickness of the line */
+    background-color: #3498db; /* Blue color for the line */
+  }
+  
+  .about-card img {
+    width: 500px;
+    height: 500px;
+    border-radius: 8px;
+    margin-left: 20px;
+  }
+  
+  .text-content {
+    flex: 1;
+  }
+  
+  .text-content h2 {
+    color: #333;
+  }
+  
+  .text-content p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .features-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .features-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .features-list img {
+    width: 20px; /* Adjust the width of the check icon */
+    height: 20px; /* Adjust the height of the check icon */
+    margin-right: 10px;
+  }
+
+  .spacer{
+    height: 100px;
+  }

@@ -1,0 +1,57 @@
+
+<div class="page-content">
+    <div class="title-div">
+       
+        <div>
+            <h1>Medical Services and Pricing</h1>
+        </div>
+       
+        <div class="search">
+            <mat-form-field appearance="fill">
+              <mat-label>Select Specialty</mat-label>
+              <mat-select [(ngModel)]="selectedSpecialty">
+                <mat-option value="0">All Specialties</mat-option>
+                <mat-option *ngFor="let specialty of specialties" [value]="specialty.name">
+                  {{ specialty.name }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+       
+       
+        
+    </div>
+    
+
+    
+    
+    <div *ngFor="let specialty of filteredSpeciality">
+        <div class="cards-container">
+           
+            <mat-card class="doctor-card">
+                <mat-card-content class="image-container">
+
+
+                  <h2 class="category-row">{{ specialty.name }} </h2>
+                  <div *ngIf="getMedicalServicesForSpecialty(specialty).length > 0">
+                    <div class="separator"></div>
+                  </div>
+                  <div *ngIf="getMedicalServicesForSpecialty(specialty).length === 0">
+                    <h2 class= "service-row">(No service available)</h2>
+                  </div>
+                  
+                  <div class="service-container" *ngFor="let service of getMedicalServicesForSpecialty(specialty)">
+                   <h2  class= "service-row">{{ service.name }} </h2> 
+                   <h2 class= "service-row"> {{ service.price }} Lei</h2>
+                  </div>
+                </mat-card-content>
+            </mat-card>
+          
+        </div>
+    </div>
+    
+</div>
+  
+ 
+  
+  

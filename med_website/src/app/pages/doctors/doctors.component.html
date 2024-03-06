@@ -1,0 +1,58 @@
+<div class="page-content">
+  <h2>Meet our doctors</h2>
+
+  <div class="search-container">
+    
+    <div class="search">
+      <mat-icon class="search-icon" aria-hidden="false" fontIcon="search"></mat-icon>
+      <input class="search-input" type="text" placeholder="Search for a doctor" [(ngModel)]="searchTerm" />
+    </div>
+
+
+    
+    <div class="search">
+      <mat-form-field appearance="fill">
+        <mat-label>Select Specialty</mat-label>
+        <mat-select [(ngModel)]="selectedSpecialty">
+          <mat-option value="0">All Specialties</mat-option>
+          <mat-option *ngFor="let specialty of specialties" [value]="specialty.name">
+            {{ specialty.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div *ngIf="filteredDoctors.length != 0; " class="no-doctor-found-message">
+    <h1>We have {{ doctors.length }} Doctors</h1>
+  </div>
+
+
+  <div class="cards-container">
+    <div *ngIf="filteredDoctors.length === 0; " class="no-doctor-found-message">
+      No doctors found for the selected criteria.
+    </div>
+    <div *ngFor="let doctor of filteredDoctors" class="doctor-card">
+      <mat-card>
+        <mat-card-content class="image-container">
+
+          <img src={{doctor.img}}>
+          <h3>{{ doctor.name }}</h3>
+          <h6>Specialized in:</h6>
+          <h4 class="bn49" href="/">{{ doctor.specialty }}</h4>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="pagination">
+  <h5>Select page:</h5>
+  <ng-container *ngIf="totalPages > 0">
+    <button *ngFor="let page of getPagesArray()" (click)="onPageChange(page)" [class.active]="page === currentPage">
+      {{ page }}
+    </button>
+  </ng-container>
+</div>

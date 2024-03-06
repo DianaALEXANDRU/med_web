@@ -1,0 +1,147 @@
+.page-content{
+    margin-left: 160px;
+}
+
+.title-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+h1 {
+    position: relative;
+    color: #333;
+    font-size: 40px;
+}
+
+  h1::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100px; /* Adjust the width of the line */
+    height: 5px; /* Adjust the height and thickness of the line */
+    background-color: #3498db; /* Blue color for the line */
+  }
+
+  .category-row{
+    display: flex;
+    height: 50px;
+    width: 70%;
+    align-items: center;
+    padding-left: 30px;
+    margin: 0px;
+    text-transform: uppercase;
+    font-weight: 550;
+    color: #3498db;
+    
+  }
+
+  .service-row{
+    display: flex;
+    height: 30px;
+    width: 70%;
+    
+    align-items: center;
+    padding-left: 30px;
+    margin: 0px;
+    font-weight: 400;
+    color: #3498db;
+    font-size: 15px;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .doctor-card {
+    background-color: #ffffff; 
+    /* background-color: #F5F5F5; */
+    width: 100%; /* 25% width with 20px gap between cards */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    
+  }
+ 
+
+  .image-container {
+    display: inline-block; /* Make the container inline-block */
+    text-align: center; /* Center content horizontally within the container */
+  } 
+  
+  .page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  
+  .search{
+   
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 28px;
+    background: #f6f6f6;
+    transition: background 0.25s;
+  }
+
+  .search:focus-within{
+    background: #f1f1f1;
+  }
+  
+  .flex-container {
+    display: flex;
+    align-items: center;
+  
+  }
+
+  .search {
+    height: 40px; /* Adjust the height to your preference */
+    overflow: hidden; /* Ensure content doesn't overflow */
+   
+  
+  }
+  
+   .mat-select {
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 20px; */
+  }
+  
+
+  .service-container{
+   
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     
+  }
+
+  .line{
+    width: 120px;
+    height: 10px;
+    color: #3498db;
+  }
+
+  .separator {
+    border: 1px solid #3498db; /* Change color and thickness as needed */
+    
+    width: 70%;
+    margin-left: 30px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+
+  }
+
+  
